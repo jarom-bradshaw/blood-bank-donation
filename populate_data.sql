@@ -1,20 +1,116 @@
 
 -- Insert sample data into Donors
 INSERT INTO Donors (FirstName, LastName, DateOfBirth, BloodType, PhoneNumber, Email, Address, City, State, ZipCode, LastDonationDate) VALUES 
-('John', 'Doe', '1990-01-01', 'O+', '123-456-7890', 'john.doe@example.com', '123 Main St', 'CityName', 'StateName', '12345', '2023-01-15');
+('Jane', 'Smith', '1985-03-22', 'A-', '234-567-8901', 'jane.smith@example.com', '456 Elm St', 'Townsville', 'StateName', '23456', '2023-02-10'),
+('Alice', 'Johnson', '1992-07-15', 'B+', '345-678-9012', 'alice.johnson@example.com', '789 Pine St', 'VillageTown', 'StateName', '34567', '2023-03-05'),
+('Bob', 'Williams', '1988-12-02', 'AB-', '456-789-0123', 'bob.williams@example.com', '321 Oak St', 'CityCenter', 'StateName', '45678', '2023-01-20'),
+('Emily', 'Brown', '1995-04-25', 'O-', '567-890-1234', 'emily.brown@example.com', '654 Maple St', 'MetroCity', 'StateName', '56789', '2023-03-30'),
+('Michael', 'Jones', '1980-11-11', 'A+', '678-901-2345', 'michael.jones@example.com', '987 Cedar St', 'Suburbia', 'StateName', '67890', '2023-04-18'),
+('Sarah', 'Garcia', '1975-09-09', 'B-', '789-012-3456', 'sarah.garcia@example.com', '135 Birch St', 'Rivertown', 'StateName', '78901', '2023-05-10'),
+('David', 'Martinez', '1993-05-30', 'AB+', '890-123-4567', 'david.martinez@example.com', '246 Spruce St', 'Uptown', 'StateName', '89012', '2023-06-15'),
+('Laura', 'Hernandez', '1987-06-17', 'O+', '901-234-5678', 'laura.hernandez@example.com', '369 Walnut St', 'Downtown', 'StateName', '90123', '2023-07-01'),
+('Chris', 'Lee', '1983-10-05', 'A-', '012-345-6789', 'chris.lee@example.com', '852 Chestnut St', 'Oldtown', 'StateName', '01234', '2023-08-20'),
+('Samantha', 'Gonzalez', '1991-02-14', 'B+', '123-456-7891', 'samantha.gonzalez@example.com', '963 Fir St', 'Newtown', 'StateName', '12345', '2023-09-11'),
+('Daniel', 'Wilson', '1989-08-08', 'AB-', '234-567-8902', 'daniel.wilson@example.com', '741 Sycamore St', 'Seaside', 'StateName', '23456', '2023-10-01'),
+('Olivia', 'Anderson', '1986-01-18', 'O-', '345-678-9013', 'olivia.anderson@example.com', '159 Redwood St', 'Baytown', 'StateName', '34567', '2023-09-25'),
+('James', 'Thomas', '1994-12-12', 'A+', '456-789-0124', 'james.thomas@example.com', '258 Palm St', 'Hillside', 'StateName', '45678', '2023-10-10'),
+('Mia', 'Taylor', '1990-03-30', 'B-', '567-890-1235', 'mia.taylor@example.com', '357 Cypress St', 'Springfield', 'StateName', '56789', '2023-11-05'),
+('William', 'Moore', '1982-07-22', 'AB+', '678-901-2346', 'william.moore@example.com', '456 Hemlock St', 'Lakeside', 'StateName', '67890', '2023-10-12'),
+('Ava', 'Jackson', '1996-05-05', 'O+', '789-012-3457', 'ava.jackson@example.com', '654 Dogwood St', 'Greenfield', 'StateName', '78901', '2023-10-20'),
+('Liam', 'Martin', '1984-09-19', 'A-', '890-123-4568', 'liam.martin@example.com', '321 Willow St', 'Pinetown', 'StateName', '89012', '2023-11-15'),
+('Sophia', 'Lee', '1997-11-30', 'B+', '901-234-5679', 'sophia.lee@example.com', '123 Ash St', 'Oakwood', 'StateName', '90123', '2023-10-25'),
+('Ethan', 'Harris', '1981-02-08', 'AB-', '012-345-6780', 'ethan.harris@example.com', '987 Maple St', 'Sunnyvale', 'StateName', '01234', '2023-11-01');
 
 -- Insert sample data into Donations
 INSERT INTO Donations (DonorID, DonationDate, BloodType, VolumeInML) VALUES 
-(1, '2023-01-15', 'O+', 500);
+(1, '2023-01-15', 'O+', 500),
+(2, '2023-02-10', 'A-', 450),
+(3, '2023-03-05', 'B+', 500),
+(4, '2023-01-20', 'AB-', 400),
+(5, '2023-04-18', 'O-', 550),
+(6, '2023-05-10', 'B-', 500),
+(7, '2023-06-15', 'AB+', 480),
+(8, '2023-07-01', 'O+', 520),
+(9, '2023-08-20', 'A-', 500),
+(10, '2023-09-11', 'B+', 450),
+(11, '2023-10-01', 'AB-', 550),
+(12, '2023-09-25', 'O-', 500),
+(13, '2023-10-10', 'A+', 480),
+(14, '2023-11-05', 'B-', 500),
+(15, '2023-10-12', 'AB+', 520),
+(16, '2023-10-20', 'O+', 500),
+(17, '2023-11-15', 'A-', 480),
+(18, '2023-10-25', 'B+', 450),
+(19, '2023-11-01', 'AB-', 500),
+(20, '2023-10-30', 'O-', 550);
 
 -- Insert sample data into BloodInventory
 INSERT INTO BloodInventory (BloodType, VolumeInML, ExpirationDate) VALUES 
-('O+', 500, '2023-02-15');
+('O+', 500, '2023-02-15'),
+('A-', 450, '2023-03-10'),
+('B+', 600, '2023-04-20'),
+('AB-', 300, '2023-05-25'),
+('O-', 550, '2023-06-30'),
+('B-', 400, '2023-07-15'),
+('AB+', 500, '2023-08-05'),
+('O+', 700, '2023-09-10'),
+('A-', 500, '2023-10-12'),
+('B+', 650, '2023-11-18'),
+('AB-', 450, '2023-12-05'),
+('O-', 800, '2024-01-10'),
+('A+', 550, '2024-02-14'),
+('B-', 500, '2024-03-01'),
+('AB+', 300, '2024-04-20'),
+('O+', 400, '2024-05-25'),
+('A-', 600, '2024-06-30'),
+('B+', 550, '2024-07-15'),
+('AB-', 700, '2024-08-05'),
+('O-', 450, '2024-09-10'),
+('A+', 500, '2024-10-20');
 
 -- Insert sample data into Centers
 INSERT INTO Centers (CenterName, Address, City, State, ZipCode, PhoneNumber, Email) VALUES 
-('Downtown Blood Center', '456 Center St', 'CityName', 'StateName', '12345', '987-654-3210', 'contact@bloodcenter.org');
+('Downtown Blood Center', '456 Center St', 'CityName', 'StateName', '12345', '987-654-3210', 'contact@bloodcenter.org'),
+('Northside Donation Center', '789 North Ave', 'Townsville', 'StateName', '23456', '876-543-2109', 'info@northblood.org'),
+('Eastside Blood Bank', '321 East Rd', 'VillageTown', 'StateName', '34567', '765-432-1098', 'support@eastblood.org'),
+('Westside Donation Hub', '654 West St', 'CityCenter', 'StateName', '45678', '654-321-0987', 'help@westblood.org'),
+('Suburban Blood Donation', '987 Suburb Ln', 'MetroCity', 'StateName', '56789', '543-210-9876', 'contact@suburbanblood.org'),
+('Lakeside Blood Center', '123 Lakeview Dr', 'Rivertown', 'StateName', '67890', '432-109-8765', 'info@lakesideblood.org'),
+('Hilltop Blood Donation', '234 Hilltop Blvd', 'Uptown', 'StateName', '78901', '321-098-7654', 'support@hilltopblood.org'),
+('Greenfield Blood Bank', '345 Green St', 'Downtown', 'StateName', '89012', '210-987-6543', 'contact@greenfieldblood.org'),
+('Riverbank Donation Center', '456 River Rd', 'Oldtown', 'StateName', '90123', '109-876-5432', 'info@riverbankblood.org'),
+('Pinewood Blood Center', '567 Pine St', 'Newtown', 'StateName', '01234', '098-765-4321', 'support@pinewoodblood.org'),
+('Sunnyvale Blood Bank', '678 Sunny St', 'Seaside', 'StateName', '12345', '987-654-3211', 'contact@sunnyvaleblood.org'),
+('Maplewood Donation Center', '789 Maple St', 'Baytown', 'StateName', '23456', '876-543-2108', 'info@maplewoodblood.org'),
+('Cypress Blood Hub', '890 Cypress Rd', 'Hillside', 'StateName', '34567', '765-432-1097', 'support@cypressblood.org'),
+('Birchwood Blood Center', '901 Birch Ln', 'Springfield', 'StateName', '45678', '654-321-0986', 'contact@birchwoodblood.org'),
+('Elmwood Donation Center', '234 Elm St', 'Pinetown', 'StateName', '56789', '543-210-9875', 'info@elmwoodblood.org'),
+('Oakwood Blood Bank', '345 Oak St', 'Greenfield', 'StateName', '67890', '432-109-8764', 'support@oakwoodblood.org'),
+('Willowbrook Blood Center', '456 Willow Dr', 'Sunnyvale', 'StateName', '78901', '321-098-7653', 'contact@willowbrookblood.org'),
+('Cedar Hill Donation Hub', '567 Cedar Blvd', 'Rivertown', 'StateName', '89012', '210-987-6542', 'info@cedarhillblood.org'),
+('Meadowview Blood Bank', '678 Meadow St', 'Downtown', 'StateName', '90123', '109-876-5431', 'support@meadowviewblood.org'),
+('Harborview Blood Center', '789 Harbor St', 'Oldtown', 'StateName', '01234', '098-765-4320', 'contact@harborviewblood.org');
+
 
 -- Insert sample data into Events
 INSERT INTO Events (CenterID, EventName, EventDate) VALUES 
-(1, 'Blood Donation Drive', '2023-02-20');
+(1, 'Blood Donation Drive', '2023-02-20'),
+(2, 'Spring Blood Festival', '2023-03-15'),
+(3, 'Summer Blood Drive', '2023-06-10'),
+(4, 'Community Health Fair', '2023-04-22'),
+(5, 'Holiday Blood Drive', '2023-12-05'),
+(6, 'Back-to-School Blood Drive', '2023-08-15'),
+(7, 'Thanksgiving Donation Event', '2023-11-20'),
+(8, 'New Year Blood Drive', '2024-01-10'),
+(9, 'Memorial Day Blood Drive', '2023-05-29'),
+(10, 'National Blood Donation Week', '2023-09-01'),
+(11, 'Local Sports Team Blood Drive', '2023-07-18'),
+(12, 'Breast Cancer Awareness Blood Drive', '2023-10-10'),
+(13, 'Youth Volunteer Blood Drive', '2023-10-25'),
+(14, 'Winter Warmth Blood Drive', '2023-12-15'),
+(15, 'Health & Wellness Blood Fair', '2023-11-05'),
+(16, 'Employee Blood Donation Day', '2023-08-01'),
+(17, 'Family Fun Blood Drive', '2023-09-15'),
+(18, 'Outdoor Blood Donation Event', '2023-07-30'),
+(19, 'Corporate Challenge Blood Drive', '2023-10-05'),
+(20, 'Valentine’s Day Blood Drive', '2024-02-14');
