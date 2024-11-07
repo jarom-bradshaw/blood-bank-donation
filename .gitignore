@@ -1,0 +1,58 @@
+# Ignore Visual Studio temporary files, build results, and
+# user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Ignore Visual Studio Code workspace settings
+.vscode/
+
+# Ignore .NET Core project files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+# Uncomment if necessary
+# !packages/build/
+# !packages/repositories.config
+
+# Ignore NPM packages
+node_modules/
+
+# Ignore JetBrains Rider project files
+.idea/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore other system files
+*.swp
+*.swo

@@ -1,0 +1,18 @@
+<!-- templates/add_donor.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add Donor</h2>
+<form method="POST" action="{{ url_for('add_donor') }}">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(size=32) }}
+    </p>
+    <p>
+        {{ form.blood_type.label }}<br>
+        {{ form.blood_type() }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% endblock %}
